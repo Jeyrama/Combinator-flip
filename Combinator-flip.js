@@ -15,3 +15,5 @@ without any concern for the function being passed into it.
 
 
 // Solution
+
+const flip = fn => (...args) => fn(...args.reverse());
