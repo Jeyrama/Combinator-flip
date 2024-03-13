@@ -25,3 +25,9 @@ function flip(fn) {
     return fn.apply(this, [].reverse.call(arguments));
   }
 }
+
+// or
+
+function flip(fn) {
+  return (...a) => fn(...a.reverse());
+}
